@@ -14,7 +14,8 @@ builder.Services.AddControllers();
 //Funciones Anónimas (x => x....) Arrow Functions - Lambda Functions
 builder.Services.AddDbContext<DataBaseContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddScoped<ICountryService, CountryServices>();
+builder.Services.AddScoped<ICountryService, CountryService>();
+builder.Services.AddScoped<IStateService, StateService>();
 //Por cada nuevo servicio/interfaz que yo creo en mi API, debo agregar aquí esa nueva dependencia 
 
 

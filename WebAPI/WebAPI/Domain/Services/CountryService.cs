@@ -5,11 +5,11 @@ using WebAPI.Domain.Interfaces;
 
 namespace WebAPI.Domain.Services
 {
-    public class CountryServices : ICountryService
+    public class CountryService : ICountryService
     {
         private readonly DataBaseContext _context;
 
-        public CountryServices(DataBaseContext context)
+        public CountryService(DataBaseContext context)
         {
             _context = context;
         }
